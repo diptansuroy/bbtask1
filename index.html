@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Made in Webflow | Large View</title>
+    <title>Made in Webflow | Complete Clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -27,9 +27,9 @@
         
         .footer-link:hover { color: #111; transition: color 0.2s ease; }
 
-        /* Custom Logo Style - Made slightly bigger for balance */
+        /* Custom Logo Style */
         .custom-logo {
-            height: 38px; 
+            height: 32px;
             width: auto;
             object-fit: contain;
         }
@@ -51,6 +51,7 @@
     <nav class="sticky top-0 z-50 flex items-center justify-between px-10 py-3 bg-white border-b border-gray-100">
         <div class="flex items-center gap-4">
             <img src="main.png" alt="Logo" class="custom-logo">
+            
             <div class="hidden lg:flex gap-5 text-[14px] font-medium text-gray-500">
                 <a href="#" class="hover:text-black">Product <span class="text-[10px] ml-0.5 opacity-60">▼</span></a>
                 <a href="#" class="text-black font-semibold">Marketplace <span class="text-[10px] ml-0.5 opacity-60">▼</span></a>
@@ -124,8 +125,8 @@
     </div>
 
     <main class="max-w-[1440px] mx-auto px-8 md:px-12 pb-24">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-16" id="project-grid">
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14" id="project-grid">
+            </div>
 
         <div class="flex justify-center mt-20">
             <button class="px-8 py-3 border border-gray-200 rounded-lg text-sm font-bold hover:bg-gray-50 transition shadow-sm">
@@ -207,12 +208,24 @@
     
     <script>
         const projects = [
-            { title: "Webflow Conf 2025", author: "Webflow", likes: 33, img: "https://picsum.photos/seed/wc/1200/800", initial: "W", color: "bg-blue-600" },
-            { title: "Pause", author: "Daymark", likes: 39, img: "https://picsum.photos/seed/ps/1200/800", initial: "P", color: "bg-red-500" },
-            { title: "Dria Ventures", author: "Paper Tiger", likes: 40, img: "https://picsum.photos/seed/dv/1200/800", initial: "DV", color: "bg-black" },
-            { title: "Flowfest 2025", author: "Osmo", likes: 85, img: "https://picsum.photos/seed/ff/1200/800", initial: "F", color: "bg-orange-500" },
-            { title: "Joseph Berry Gsap Example", author: "Joseph Berry", likes: 136, img: "https://picsum.photos/seed/jb/1200/800", initial: "JB", color: "bg-gray-800" },
-            { title: "BUNKR Design", author: "Studio Kanda", likes: 31, img: "https://picsum.photos/seed/bk/1200/800", initial: "B", color: "bg-green-700" }
+            { title: "Webflow Conf 2025", author: "Webflow", likes: 33, img: "https://picsum.photos/seed/wc/800/600", initial: "W", color: "bg-blue-600" },
+            { title: "Pause", author: "Daymark", likes: 39, img: "https://picsum.photos/seed/ps/800/600", initial: "P", color: "bg-red-500" },
+            { title: "Dria Ventures", author: "Paper Tiger", likes: 40, img: "https://picsum.photos/seed/dv/800/600", initial: "DV", color: "bg-black" },
+            { title: "Flowfest 2025", author: "Osmo", likes: 85, img: "https://picsum.photos/seed/ff/800/600", initial: "F", color: "bg-orange-500" },
+            { title: "Joseph Berry Gsap Example", author: "Joseph Berry", likes: 136, img: "https://picsum.photos/seed/jb/800/600", initial: "JB", color: "bg-gray-800" },
+            { title: "BUNKR Design", author: "Studio Kanda", likes: 31, img: "https://picsum.photos/seed/bk/800/600", initial: "B", color: "bg-green-700" },
+            { title: "LITHOSQUARE", author: "SKAALD", likes: 34, img: "https://picsum.photos/seed/ls/800/600", initial: "LS", color: "bg-indigo-900" },
+            { title: "Osmo", author: "Osmo", likes: 49, img: "https://picsum.photos/seed/os/800/600", initial: "O", color: "bg-green-400" },
+            { title: "Anthem Creative", author: "greaterthan", likes: 19, img: "https://picsum.photos/seed/at/800/600", initial: "AC", color: "bg-blue-400" },
+            { title: "Finalist #WebflowChallenge", author: "Aaron Rudyk", likes: 148, img: "https://picsum.photos/seed/ar/800/600", initial: "AR", color: "bg-gray-900" },
+            { title: "Truus", author: "Dennis Snellenberg", likes: 104, img: "https://picsum.photos/seed/ts/800/600", initial: "T", color: "bg-orange-600" },
+            { title: "Bland AI: From Series B", author: "Tilipman Digital", likes: 27, img: "https://picsum.photos/seed/bai/800/600", initial: "B", color: "bg-blue-900" },
+            { title: "New Cloneable: GSAP Flip Layout", author: "Become™", likes: 58, img: "https://picsum.photos/seed/gsap/800/600", initial: "B", color: "bg-pink-600" },
+            { title: "Bark Studio", author: "Joseph Berry", likes: 150, img: "https://picsum.photos/seed/bark/800/600", initial: "BS", color: "bg-yellow-500" },
+            { title: "Crisp Loading Animation", author: "Osmo", likes: 144, img: "https://picsum.photos/seed/crisp/800/600", initial: "C", color: "bg-emerald-600" },
+            { title: "Interactions Demo Webflow Conf", author: "Osmo", likes: 76, img: "https://picsum.photos/seed/int/800/600", initial: "I", color: "bg-violet-600" },
+            { title: "talcual.studio", author: "Dariel Curbelo", likes: 41, img: "https://picsum.photos/seed/tal/800/600", initial: "TS", color: "bg-stone-800" },
+            { title: "Streamtime", author: "Koysor", likes: 39, img: "https://picsum.photos/seed/stream/800/600", initial: "S", color: "bg-sky-500" }
         ];
 
         const grid = document.getElementById('project-grid');
@@ -220,30 +233,30 @@
         projects.forEach((p, index) => {
             const card = document.createElement('div');
             card.className = "project-card group cursor-pointer";
-            card.style.transitionDelay = `${(index % 2) * 100}ms`;
+            card.style.transitionDelay = `${(index % 3) * 100}ms`;
             
             card.innerHTML = `
-                <div class="relative aspect-video rounded-2xl overflow-hidden mb-6 border border-gray-100 shadow-sm transition-all duration-300 group-hover:shadow-2xl">
+                <div class="relative aspect-[1.4/1] rounded-xl overflow-hidden mb-5 border border-gray-100 shadow-sm transition-all duration-300 group-hover:shadow-2xl">
                     <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <button class="bg-white text-black px-8 py-3.5 rounded-xl font-bold text-[15px] flex items-center gap-2 shadow-2xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                        <button class="bg-white text-black px-7 py-3 rounded-lg font-bold text-sm flex items-center gap-2 shadow-2xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                             View details <span class="text-lg">→</span>
                         </button>
                     </div>
                 </div>
-                <div class="flex items-start justify-between px-2">
-                    <div class="flex items-center gap-4 min-w-0">
-                        <div class="w-11 h-11 flex-shrink-0 rounded-full ${p.color} flex items-center justify-center text-white text-[12px] font-bold ring-4 ring-gray-50">
+                <div class="flex items-start justify-between px-1">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <div class="w-9 h-9 flex-shrink-0 rounded-full ${p.color} flex items-center justify-center text-white text-[11px] font-bold ring-4 ring-gray-50">
                             ${p.initial}
                         </div>
                         <div class="min-w-0">
-                            <h3 class="text-[17px] font-[700] text-gray-900 group-hover:text-blue-600 transition-colors leading-tight truncate pr-2">${p.title}</h3>
-                            <p class="text-[14px] text-gray-500 font-medium truncate">${p.author}</p>
+                            <h3 class="text-[15px] font-[700] text-gray-900 group-hover:text-blue-600 transition-colors leading-tight truncate pr-2">${p.title}</h3>
+                            <p class="text-[13px] text-gray-500 font-medium truncate">${p.author}</p>
                         </div>
                     </div>
-                    <div class="flex items-center gap-1.5 text-gray-400 flex-shrink-0 mt-1">
-                        <svg class="w-5 h-5 hover:fill-red-500 hover:text-red-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-                        <span class="text-[14px] font-bold">${p.likes}</span>
+                    <div class="flex items-center gap-1.5 text-gray-400 flex-shrink-0">
+                        <svg class="w-4 h-4 hover:fill-red-500 hover:text-red-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                        <span class="text-[13px] font-bold">${p.likes}</span>
                     </div>
                 </div>
             `;
